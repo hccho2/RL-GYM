@@ -6,7 +6,7 @@
 * DDPG
 
 
-Breakout Train Clipped Reward Graph
+Breakout Train Graph: Episode-Reward
 <p align="center"><img src="gif/breakout-train-graph.png" />  </p>
 
 
