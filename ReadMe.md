@@ -6,4 +6,4 @@
 * DDPG
 
 Policy Gradient - REINFORCE
-<p align="center"><img src="gif/pg.gif" />  </p>
+<p align="center"><img src="gif/PG.gif" />  </p>
