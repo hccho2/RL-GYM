@@ -20,3 +20,8 @@ A2C - Advantage Actor Critic - BreakoutDeterministic-v4 - reward(792)
 
 DDPG - Pendulum-v0 - 1000 step reward: -116.21
 <p align="center"><img src="gif/DDPG.gif" />  </p>
+
+
+---------------------------------
+Reference
+- https://github.com/hunkim/ReinforcementZeroToAll
