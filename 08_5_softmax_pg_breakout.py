@@ -1,5 +1,5 @@
 """
-breakout은  state diff 방식 : train_state_diff - infer1()    보다 state stack 방식 : train_state_stack - infer2()  으로 해야 잘된다.
+breakout은  state diff 방식 : train_state_diff - infer1()  보다 state diff stack 방식 : train_state_stack - infer2()  으로 해야 잘된다.
 
 
 https://github.com/jcwleo/Reinforcement_Learning/blob/master/Breakout/Breakout_PolicyGradient.py
