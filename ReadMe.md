@@ -5,6 +5,11 @@
 * A3C
 * DDPG
 
+
+Breakout Train Clipped Reward Graph
+<p align="center"><img src="gif/breakout-train-graph.png" />  </p>
+
+
 Policy Gradient - REINFORCE - BreakoutDeterministic-v4  - reward(750)
 <p align="center"><img src="gif/PG.gif" />  </p>
 
