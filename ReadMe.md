@@ -5,3 +5,5 @@
 * A3C
 * DDPG
 
+Policy Gradient - REINFORCE
+<p align="center"><img src="gif/pg.gif" />  </p>
