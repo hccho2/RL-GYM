@@ -18,7 +18,7 @@ Breakout Train Graph: Episode-Reward
 | `A3C(data,MC)`  | 35283| 263 / 371 / 284 |
 | `A3C(grad,30step)` | 41742| 340 / 428 / 386|
 
-모델별 Breakout 결과 비교(argmax방식에 확률 3%로 action확률에 기반한 randomness 적용): action 선택에 약간의 randomness가 있다. 그렇지 않으면 episode마다 결과가 달라지지 않는다. randomness를 주는 정도에 따라서도 결과가 달라진다.
+표 설명: 모델별 Breakout 결과 비교(argmax방식에 확률 3%로 action확률에 기반한 randomness 적용): action 선택에 약간의 randomness가 있다. 그렇지 않으면 episode마다 결과가 달라지지 않는다. randomness를 주는 정도에 따라서도 결과가 달라진다.
 
 
 --------------------------------------
