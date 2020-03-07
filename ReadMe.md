@@ -28,6 +28,7 @@ Policy Gradient - REINFORCE - BreakoutDeterministic-v4  - reward(750)
 <p align="center"><img src="gif/PG.gif" />  </p>
 
 - [Code](https://github.com/hccho2/RL-GYM/blob/master/08_5_softmax_pg_breakout.py)
+- [Pretrained Model](https://github.com/hccho2/RL-GYM/blob/master/break2)
 - env = gym.make("BreakoutDeterministic-v4")
 - env가 만들어 주는 state는 (210,160,3)형태의 uint8 data이다. Preprocessing을 통해, (80,80,1) 또는 (84,84,1) float data로 변환 
 - Network입력 data:
