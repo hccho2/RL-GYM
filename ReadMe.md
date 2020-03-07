@@ -20,7 +20,7 @@ Policy Gradient - REINFORCE - BreakoutDeterministic-v4  - reward(750)
 - Network입력 data:
 	* 현재 state와 직전 state의 차이 값을 network의 입력값으로 사용: (80,80,1)
 	* 현재 state와 직전 state의 차이 값들을 4개 쌓은 후, 입력값으로 사용: (80,80,4)
-	* 후자가 더 train이 잘 된다.
+	* train해 보면, 후자가 더 잘 된다.
 --------------------------------------
 ### Advantage Actor Critic(A2c)
 A2C - Advantage Actor Critic - BreakoutDeterministic-v4 - reward(792)
