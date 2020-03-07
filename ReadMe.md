@@ -10,7 +10,7 @@ Breakout Train Graph: Episode-Reward
 
 
 | Model | # of episode | 20회 test 최소/최대/평균 |
-|---|:---:|---:|
+|---|:---:|:---:|
 | `PG` | 90500 | 328/736/419 |
 | `DQN(double,dueling) ` | 13000 | 113/384/265 |
 | `A2C(MC)` |40000 | 402/459/432 |
