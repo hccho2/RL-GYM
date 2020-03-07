@@ -41,7 +41,7 @@ Policy Gradient - REINFORCE - BreakoutDeterministic-v4  - reward(750)
 - Neural Netowk 크기: convolution layer를 2단으로 하는 것보다 3단으로 하는 것이 좋다.
 - No-Operation: Breakout은 게임은 공이 코너쪽으로 가는 패튼으로 시작한다. 같은 패튼의 data가 많이 들어가는 것을 방지하기 위해, random하게 최대 30번의 action을 1(`FIRE')로 고정한다. dead상태일 때 reward를 -1로 한다면, No-Operation을 설정하지 않아도 효과가 있지만, overfitting을 방지하기 위해서는 해주는 것이 좋다. dead 상태에서 시작할 때는 최대 10번 No-Operation.
 --------------------------------------
-### Advantage Actor Critic(A2c)
+### Advantage Actor Critic(A2)
 A2C - Advantage Actor Critic - BreakoutDeterministic-v4 - reward(792)
 <p align="center"><img src="gif/A2C.gif" />  </p>
 
