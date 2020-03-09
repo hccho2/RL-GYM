@@ -1,4 +1,4 @@
-# Reinfocement Learning
+# Reinfocement Learning: Breakout을 400점 넘게 train.
 * Tensorflow 1.14
 * DQN
 * Vanilla Policy Gradient
