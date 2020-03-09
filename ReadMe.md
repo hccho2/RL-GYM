@@ -10,7 +10,7 @@ Breakout Train Graph: Episode-Reward
 <p align="center"><img src="gif/breakout-train-graph.png" />  </p>
 
 
-| Model | # of episode | 20회 test 최소/최대/평균 |
+| Model | # of episode | 20회 test. min/max/avg |
 |---|:---:|:---:|
 | `PG` | 90500 | 328 / 736 / 419 |
 | `DQN(double,dueling) ` | 14000 | 194 / 420 / 329 (Boltzmann), 102 / 421 / 311(ϵ-greedy) |
