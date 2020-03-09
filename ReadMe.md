@@ -52,9 +52,16 @@ A2C - Advantage Actor Critic - BreakoutDeterministic-v4 - reward(792)
 - Actior-Critic 모델은 MC방식과 TD방식으로 구현할 수 있는데, 구현된 코드는 MC방식이다.
   * MC방식: episode를 done이 될때까지 생성한 후, train
   * TD방식: episode의 각 step마다 train
-- Actor-Critic은 Vanilla Policy Gradient에 비해 train 속도가 훨씬 빠르다.
+- Actor-Critic은 Vanilla Policy Gradient(REINFORCE)에 비해 train 속도가 훨씬 빠르다.
 --------------------------------------
 ### DQN
+- [Code](https://github.com/hccho2/RL-GYM/blob/master/08_6_dqn_breakout.py)
+- [Pretrained Model](https://github.com/hccho2/RL-GYM/tree/master/breakout-dqn)
+
+- env가 return하는 done이 아닌, life가 줄어드는 dead를 기준으로 DONE 처리를 해야 한다.
+- epsilon-greedy, No-Operation을 적용하기 때문에, train할 때 달성되는 reward보다 test reward가 높게 나온다( 20점 -> 320점. 그 이유는 reward clipping. 그리고, train할 때는 exploration으로 인해 life를 더 쉽게 잃기 때문이다. exploration에서도 완전히 random한 action을 취한다. 반면, PG에서는 확률에 기반한 random이다.).
+- Huber loss 사용
+- replay momory에는 정수값으로 state 정보를 저장해야 메모리 관리가 효율적이다.
 
 --------------------------------------
 ### DDPG
