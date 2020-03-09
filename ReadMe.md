@@ -79,9 +79,13 @@ A2C - Advantage Actor Critic - BreakoutDeterministic-v4 - reward(792)
 
 --------------------------------------
 ### DDPG
-DDPG - Pendulum-v0 - 1000 step reward: -116.21
+DDPG - Pendulum-v0 - 1000 step reward: -116.21 (gif가 멈추어 있는 것처럼 보이지만, 균형 상태를 이루고 있는 것임)
 <p align="center"><img src="gif/DDPG.gif" />  </p>
 
+- DDPG는 continous action을 다룰 수 있는 모델.
+- gym 게임 중, continous action 환경인 Pendulum-v0에 적용
+- [Code](https://github.com/hccho2/RL-GYM/blob/master/08_10_ddpg_pendulum.py)
+- [Pretrained Model](https://github.com/hccho2/RL-GYM/tree/master/ddpg-model)
 
 ---------------------------------
 Reference
