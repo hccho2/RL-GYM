@@ -1,4 +1,5 @@
 # Reinfocement Learning
+* Tensorflow 1.14
 * DQN
 * Vanilla Policy Gradient
 * Actor-Critic
