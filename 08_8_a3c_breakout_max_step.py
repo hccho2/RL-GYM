@@ -10,7 +10,7 @@ Agent들은 member로  self.local = A3CNetwork(...)를 가지고 있다.
 
 
 
-max_step = 30으로 설정된 모델. 30step이 채워지면 train. 비동기적 특성을 적용하기 위해.
+max_step = 30으로 설정된 모델. 30step이 채워지면 train. 비동기적 특성을 강하게 적용하기 위해.
 
 """
 import tensorflow as tf
