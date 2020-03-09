@@ -65,13 +65,15 @@ A2C - Advantage Actor Critic - BreakoutDeterministic-v4 - reward(792)
 
 --------------------------------------
 ### Asynchronous Advantage Actor Critic(A3C)
-- [Code](https://github.com/hccho2/RL-GYM/blob/master/08_8_a3c_breakout.py)
+- [Code](https://github.com/hccho2/RL-GYM/blob/master/08_8_a3c_breakout.py): MC, gradient 방식
 - [Pretrained Model](https://github.com/hccho2/RL-GYM/tree/master/breakout-a3c)
 - gradient 방식과 data방식으로 적용할 수 있다.
   * gradient방식: 각 local agent가 gradient를 계산 한 후, global network의 weight를 update한다.
-  * data방식: 각 local agent는 episode를 생성하기만 하고, 생성된 data를 global network가 직접 자신을 train한다.
+  * data방식: 각 local agent는 episode를 생성하기만 하고, 생성된 data를 global network가 직접 자신을 train한다. [Code](https://github.com/hccho2/RL-GYM/blob/master/08_9_a3c_breakout_data.py), [Pretrained Model](https://github.com/hccho2/RL-GYM/tree/master/breakout-a3c-data)
 - agent의 독립적인 episode 생성을 위해서는 MC방식 보다 n-step이 더 좋다. MC방식은 episode가 done이 될 때까지 진행 후, train을 수행한다.
-- n-step 방식은 episode의 길이가 n에 도달하면 train을 수행한다. n-step 방식이 MC방식보다 초반에는 빠르게 train되지만, 후반으로 갈 수록 MC가 더 빨리 train된다.
+- A2C와 동일하게, MC방식 또는 n-step 방식이 있을 수 있다.
+   * MC방식: episode를 done이 될때까지 생성 후, train.
+   * n-step방식: episode의 길이가 n에 도달하면 train을 수행한다. n-step 방식이 MC방식보다 초반에는 빠르게 train되지만, 후반으로 갈 수록 MC가 더 빨리 train된다. [Code](https://github.com/hccho2/RL-GYM/blob/master/08_9_a3c_breakout_max_step.py), [Pretrained Model](https://github.com/hccho2/RL-GYM/tree/master/breakout-a3c-max-step)
 - 일반적으로 A3C에서는 thread의 갯수가 많을수록 train 속도가 좋다. Breakout에서는 thread 갯수가 미치는 영향이 작다. train 속도은 빨라지지만, episode 개수 대비로 보면 많은 차이가 없다.
 
 --------------------------------------
