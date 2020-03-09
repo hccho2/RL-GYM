@@ -53,15 +53,26 @@ A2C - Advantage Actor Critic - BreakoutDeterministic-v4 - reward(792)
   * MC방식: episode를 done이 될때까지 생성한 후, train
   * TD방식: episode의 각 step마다 train
 - Actor-Critic은 Vanilla Policy Gradient(REINFORCE)에 비해 train 속도가 훨씬 빠르다.
+
 --------------------------------------
 ### DQN
 - [Code](https://github.com/hccho2/RL-GYM/blob/master/08_6_dqn_breakout.py)
 - [Pretrained Model](https://github.com/hccho2/RL-GYM/tree/master/breakout-dqn)
-
 - env가 return하는 done이 아닌, life가 줄어드는 dead를 기준으로 DONE 처리를 해야 한다.
 - epsilon-greedy, No-Operation을 적용하기 때문에, train할 때 달성되는 reward보다 test reward가 높게 나온다( 20점 -> 320점. 그 이유는 reward clipping. 그리고, train할 때는 exploration으로 인해 life를 더 쉽게 잃기 때문이다. exploration에서도 완전히 random한 action을 취한다. 반면, PG에서는 확률에 기반한 random이다.).
 - Huber loss 사용
 - replay momory에는 정수값으로 state 정보를 저장해야 메모리 관리가 효율적이다.
+
+--------------------------------------
+### Asynchronous Advantage Actor Critic(A3C)
+- [Code](https://github.com/hccho2/RL-GYM/blob/master/08_8_a3c_breakout.py)
+- [Pretrained Model](https://github.com/hccho2/RL-GYM/tree/master/breakout-a3c)
+- gradient 방식과 data방식으로 적용할 수 있다.
+  * gradient방식: 각 local agent가 gradient를 계산 한 후, global network의 weight를 update한다.
+  * data방식: 각 local agent는 episode를 생성하기만 하고, 생성된 data를 global network가 직접 자신을 train한다.
+- agent의 독립적인 episode 생성을 위해서는 MC방식 보다 n-step이 더 좋다. MC방식은 episode가 done이 될 때까지 진행 후, train을 수행한다.
+- n-step 방식은 episode의 길이가 n에 도달하면 train을 수행한다. n-step 방식이 MC방식보다 초반에는 빠르게 train되지만, 후반으로 갈 수록 MC가 더 빨리 train된다.
+- 일반적으로 A3C에서는 thread의 갯수가 많을수록 train 속도가 좋다. Breakout에서는 thread 갯수가 미치는 영향이 작다. train 속도은 빨라지지만, episode 개수 대비로 보면 많은 차이가 없다.
 
 --------------------------------------
 ### DDPG
