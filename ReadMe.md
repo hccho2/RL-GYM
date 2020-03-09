@@ -60,4 +60,4 @@ DDPG - Pendulum-v0 - 1000 step reward: -116.21
 ---------------------------------
 Reference
 - https://github.com/hunkim/ReinforcementZeroToAll
-- [직접 정리하 자료](https://drive.google.com/drive/folders/1S6z-RHqVN_zcX1ygKr9r0NOodWq37NZh)
+- [직접 정리한 자료](https://drive.google.com/open?id=16olGwVvk_smtgopmuUtouOf1ad1RGpIf)
