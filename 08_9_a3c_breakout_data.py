@@ -1,7 +1,7 @@
 """
 Simple Asynchronous Methods for Deep Reinforcement Learning (A3C)
 
-local Agent가 gradient를 update하는 방식이 이니, global network를 train한다.
+local Agent가 gradient를 update하는 방식이 아니고, data만 생성. global network가  train한다.
 
 
 """
