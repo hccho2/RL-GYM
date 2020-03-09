@@ -3,7 +3,7 @@
 '''
 ddpg는 continuous action 모델
 
-1. github jcwleo(주찬성), 
+1. github jcwleo, 
 2. PG is all you need, 
 3. MorvanZhou(https://github.com/MorvanZhou/Reinforcement-learning-with-tensorflow)
 
@@ -15,14 +15,6 @@ PG is all you need(MrSyee): https://github.com/MrSyee/pg-is-all-you-need   (PPO,
 https://github.com/jinPrelude/Americano_lab/tree/master/DDPG_Pendulum
 
 https://github.com/openai/gym/wiki/Leaderboard#pendulum-v0  --> leaderboard --> https://github.com/msinto93/DDPG
-
-TRPO: https://reinforcement-learning-kr.github.io/2018/06/24/5_trpo/
-
-
-
-PER: https://jaromiru.com/2016/11/07/lets-make-a-dqn-double-learning-and-prioritized-experience-replay/
-https://github.com/rlcode/per   <---- 여기 코드도 위 blog의 SumTree Class 사용.
-
 
 
 '''
