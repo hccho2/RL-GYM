@@ -73,7 +73,7 @@ A2C - Advantage Actor Critic - BreakoutDeterministic-v4 - reward(792)
 - agent의 독립적인 episode 생성을 위해서는 MC방식 보다 n-step이 더 좋다. MC방식은 episode가 done이 될 때까지 진행 후, train을 수행한다.
 - A2C와 동일하게, MC방식 또는 n-step 방식이 있을 수 있다.
    * MC방식: episode를 done이 될때까지 생성 후, train.
-   * n-step방식: episode의 길이가 n에 도달하면 train을 수행한다. n-step 방식이 MC방식보다 초반에는 빠르게 train되지만, 후반으로 갈 수록 MC가 더 빨리 train된다. [Code](https://github.com/hccho2/RL-GYM/blob/master/08_9_a3c_breakout_max_step.py), [Pretrained Model](https://github.com/hccho2/RL-GYM/tree/master/breakout-a3c-max-step)
+   * n-step방식: episode의 길이가 n에 도달하면 train을 수행한다. n-step 방식이 MC방식보다 초반에는 빠르게 train되지만, 후반으로 갈 수록 MC가 더 빨리 train된다. [Code](https://github.com/hccho2/RL-GYM/blob/master/08_8_a3c_breakout_max_step.py), [Pretrained Model](https://github.com/hccho2/RL-GYM/tree/master/breakout-a3c-max-step)
 - 일반적으로 A3C에서는 thread의 갯수가 많을수록 train 속도가 좋다. Breakout에서는 thread 갯수가 미치는 영향이 작다. train 속도은 빨라지지만, episode 개수 대비로 보면 많은 차이가 없다.
 
 --------------------------------------
