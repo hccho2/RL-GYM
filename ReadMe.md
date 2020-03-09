@@ -47,7 +47,12 @@ Policy Gradient - REINFORCE - BreakoutDeterministic-v4  - reward(750)
 A2C - Advantage Actor Critic - BreakoutDeterministic-v4 - reward(792)
 <p align="center"><img src="gif/A2C.gif" />  </p>
 
-
+- [Code](https://github.com/hccho2/RL-GYM/blob/master/08_7_a2c_breakout.py)
+- [Pretrained Model](https://github.com/hccho2/RL-GYM/tree/master/breakout-a2c)
+- Actior-Critic 모델은 MC방식과 TD방식으로 구현할 수 있는데, 구현된 코드는 MC방식이다.
+  * MC방식: episode를 done이 될때까지 생성한 후, train
+  * TD방식: episode의 각 step마다 train
+- Actor-Critic은 Vanilla Policy Gradient에 비해 train 속도가 훨씬 빠르다.
 --------------------------------------
 ### DQN
 
