@@ -5,7 +5,12 @@
 * Actor-Critic
 * A3C
 * DDPG
+--------------------------------------
+### Breakout에서 주의할 점들
+- life가 5개 이므로, done/dead를 잘 구분하자. (dead는 life를 하나 잃는 상황)
 
+
+--------------------------------------
 Breakout Train Graph: Episode-Reward
 <p align="center"><img src="gif/breakout-train-graph.png" />  </p>
 
