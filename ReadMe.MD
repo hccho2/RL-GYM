@@ -1,4 +1,5 @@
-DPPO-Perfect score(864점) <p align="center"><img src="gif/dppo-864.gif" />  </p>
+Perfect score(864점): DPPO(left) / ACER(right)
+<p align="center"><img src="gif/dppo-864.gif" /> &nbsp; &nbsp; &nbsp;<p align="center"><img src="gif/acer-864.gif" />  </p>
 
 
 
