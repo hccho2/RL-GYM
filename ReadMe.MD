@@ -1,4 +1,4 @@
-DPPO-Perfect score <p align="center"><img src="gif/dppo-864.gif" />  </p>
+DPPO-Perfect score(864점) <p align="center"><img src="gif/dppo-864.gif" />  </p>
 
 
 
@@ -102,7 +102,7 @@ DDPG - Pendulum-v0 - 1000 step reward: -116.21 (gif가 멈추어 있는 것처�
 ### DPPO
 - PPO는 TRPO을 좀 간략하게 수정한 모델
 - train 속도는 A2C, A3C보다 월등히 빠르다.
-
+- 만점 864점을 기록하기도 했다.
 
 
 --------------------------------------
