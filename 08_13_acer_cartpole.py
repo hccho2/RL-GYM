@@ -362,9 +362,6 @@ class ACER(object):
 class Agent(object):
     def __init__(self):
 
-        self.gamma = 0.99
-        self.lamda = 0.95
-
         buffer_size = 15000
         self.replay_start = 5000   # train을 위한, experience_replay의 최소 크기.
         self.replay_ratio= 4 # on-policy로 data생성 --> train 후, replay-buffer에 있는 data로 몇번 train할 것인가.
