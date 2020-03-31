@@ -113,6 +113,7 @@ DDPG - Pendulum-v0 - 1000 step reward: -116.21 (gif가 멈추어 있는 것처�
 - OpenAI baselines 코드를 simplel하게 수정
 - MPI 대신 multiprocessing으로 구현
 - Optimizer를 RMSProp 대신, Adam 사용
+- process 8개 사용.
 - learning_rate = 0.00025에서 출발하여 점차적으로 감소
 - 2시40분 정도 train하면 적절. 좀 더 train하면 4시간 정도까지.
 
