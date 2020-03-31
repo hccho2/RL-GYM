@@ -1,5 +1,5 @@
-<p align="center"><img src="gif/dppo-864.gif" />  </p>
-DPPO-Perfect score
+DPPO-Perfect score <p align="center"><img src="gif/dppo-864.gif" />  </p>
+
 
 
 # Reinfocement Learning: Breakout을 400점 넘게 train.
