@@ -106,6 +106,6 @@ env = gym.wrappers.Monitor(env, './movie/', force=True,video_callable=lambda cou
 
 ---------------------------------
 Reference
-- <https://github.com/hunkim/ReinforcementZeroToAll>{:target="_blank"}
-- [직접 정리한 자료](https://drive.google.com/open?id=16olGwVvk_smtgopmuUtouOf1ad1RGpIf){:target="_blank"}
-- [ACER blog](https://hccho2.github.io/2020/03/27/ACER-analysis.html){:target="_blank"}
+- <https://github.com/hunkim/ReinforcementZeroToAll>
+- [직접 정리한 자료](https://drive.google.com/open?id=16olGwVvk_smtgopmuUtouOf1ad1RGpIf)
+- [ACER blog](https://hccho2.github.io/2020/03/27/ACER-analysis.html)
