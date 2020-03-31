@@ -1,8 +1,9 @@
 
 
 '''
-https://github.com/sweetice/Deep-reinforcement-learning-with-pytorch  ----> acer 없음.
+https://github.com/openai/baselines
 
+https://github.com/sweetice/Deep-reinforcement-learning-with-pytorch  ----> acer 없음.
 
 http://www.secmem.org/blog/2019/06/17/ACER/
 
@@ -520,8 +521,6 @@ class Agent(object):
 
 
 
-
-
 def train():
     agent = Agent()
     agent.run_training_loop()
@@ -557,16 +556,6 @@ def infer():
             if done or reward_sum >= 500:
                 print("Try: {}, Total score: {}".format(i,reward_sum))
                 break  
-
-
-
-
-
-
-
-
-
-
 
 
 
