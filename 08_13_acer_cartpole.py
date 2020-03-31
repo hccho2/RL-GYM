@@ -100,7 +100,7 @@ def q_retrace(R, D, q_i, v, rho_i, nenvs, nsteps, gamma):
         qret = rs[i] + gamma * qret * (1.0 - ds[i])
         qrets.append(qret)
         qret = (rho_bar[i] * (qret - q_is[i])) + vs[i]
-    qrets = qrets[::-1]   # 역으로 배영
+    qrets = qrets[::-1]   # 역으로 배
     qret = seq_to_batch(qrets,None, flat=True)
     return qret
 
