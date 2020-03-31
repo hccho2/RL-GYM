@@ -1,11 +1,9 @@
-
+# coding: utf-8
 
 '''
 https://github.com/openai/baselines
 
 https://github.com/sweetice/Deep-reinforcement-learning-with-pytorch  ----> acer 없음.
-
-http://www.secmem.org/blog/2019/06/17/ACER/
 
 '''
 
