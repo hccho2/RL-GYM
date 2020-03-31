@@ -99,6 +99,12 @@ DDPG - Pendulum-v0 - 1000 step reward: -116.21 (gif가 멈추어 있는 것처�
 - [Pretrained Model](https://github.com/hccho2/RL-GYM/tree/master/ddpg-model)
 
 --------------------------------------
+### DPPO
+- PPO는 TRPO을 좀 간략하게 수정한 모델
+- train 속도는 A2C, A3C보다 월등히 빠르다.
+
+
+
 --------------------------------------
 ### OpenAI GYM Tips
 ```
