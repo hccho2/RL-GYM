@@ -1,3 +1,5 @@
+##### 강화학습: 주어진 환경(Environment)에서 보상(reward)를 최대화하기 위해, 행동(action)을 배우는( 문제.
+
 Perfect score(864점): DPPO(left) / ACER(right)
 <p align="center"><img src="gif/dppo-864.gif"> <img src="gif/acer-864.gif"> </p>
 
